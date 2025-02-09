@@ -1,0 +1,137 @@
+nav{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+nav a{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding: 15.5px;
+    color: black;
+    text-decoration: none;
+    width: 9%;
+}
+
+nav a:hover{
+    background-image : url(https://flagcdn.com/w80/nl.png);
+}
+
+.image{
+    width: 30%;
+    float: left;
+    transition: width 0.4s;
+}
+
+.image:hover{
+    width: 31%;
+
+}
+
+#onsland{
+    float:left;
+    width: 30%;
+    color: rgb(30,30,200);
+    font-weight:bolder;
+}
+
+#rightheader{
+    float: left;
+    padding: 20px;
+    width: 50%;
+    margin-left: 50px;
+}
+
+#Hstand{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float:left;
+    width: 100%;
+}
+
+.standpunten{
+    width: 40%;
+    height: 200px;
+    float: left;
+    background-color: #E1E1E1;
+    padding: 15px;
+    border: 3px solid rgb(150,150,150);
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 1.5%;
+}
+
+.rechts{
+    margin-left:10px;
+}
+
+.imgstandpunt{
+    float: left;
+    width: 40%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.imgstandpunt img{
+    border-radius: 3%;
+}
+
+.imgstandpunt p{
+    background-color: white;
+    width: 100%;
+}
+
+.secondrow{
+    float:none;
+}
+
+.article{
+    width: 60%;
+}
+
+#doneer{
+    margin:auto;
+    width: 55%;
+}
+
+#doneer a{
+    color: rgb(200,0,0);
+    font-weight: 5;
+    text-decoration: none;
+}
+
+#doneer a:hover{
+    color: rgb(255,0,0);
+    font-weight: bolder;
+    font-size: 14pt;
+    
+}
+
+#focus{
+    background-image : url(https://flagcdn.com/w80/nl.png);
+}
+
+#wrapper{
+    width: 95%;
+    margin: auto;
+}
+
+h3{
+    font-weight: normal;
+}
+
+h2{
+    text-align: center;
+}
+
+.logo{
+    margin-top: 10px;
+    height: 50px;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
