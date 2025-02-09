@@ -1,3 +1,8 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 nav{
     margin-top: 30px;
     margin-bottom: 40px;
@@ -14,10 +19,48 @@ nav a{
     width: 9%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
 nav a:hover{
     background-image : url(https://flagcdn.com/w80/nl.png);
 }
 
+
+
+/*    Homepagine images aanpassen    */
 .image{
     width: 30%;
     float: left;
@@ -28,6 +71,8 @@ nav a:hover{
     width: 31%;
 
 }
+
+
 
 #onsland{
     float:left;
@@ -50,6 +95,8 @@ nav a:hover{
     float:left;
     width: 100%;
 }
+
+
 
 .standpunten{
     width: 40%;
@@ -132,6 +179,15 @@ h2{
     height: 50px;
 }
 
-*{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
 }
