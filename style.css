@@ -3,6 +3,8 @@
 }
 
 
+
+/*    nav voor de grootte van mijn laptopscherm   */
 nav{
     margin-top: 30px;
     margin-bottom: 40px;
@@ -19,6 +21,9 @@ nav a{
     width: 9%;
 }
 
+#focus{
+    background-image : url(https://flagcdn.com/w80/nl.png);
+}
 
 /*    Homepagine images aanpassen    */
 .image{
@@ -33,7 +38,7 @@ nav a{
 }
 
 
-
+/*    voor de tekst op de homepagina    */
 #onsland{
     float:left;
     width: 30%;
@@ -58,6 +63,8 @@ nav a{
 
 
 
+
+/*    voor de pagina "standpunten" */
 .standpunten{
     width: 40%;
     height: 200px;
@@ -95,10 +102,15 @@ nav a{
     float:none;
 }
 
+
+/*    voor alle aticles (stukjes tekst) op de website    */
 .article{
     width: 60%;
 }
 
+
+
+/*    voor de doneer pagina    */
 #doneer{
     margin:auto;
     width: 55%;
@@ -117,9 +129,7 @@ nav a{
     
 }
 
-#focus{
-    background-image : url(https://flagcdn.com/w80/nl.png);
-}
+
 
 #wrapper{
     width: 95%;
@@ -137,17 +147,4 @@ h2{
 .logo{
     margin-top: 10px;
     height: 50px;
-}
-
-
-
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 5px 0;
-    }
 }
