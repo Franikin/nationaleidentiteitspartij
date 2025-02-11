@@ -22,7 +22,7 @@ nav a{
 }
 
 #focus{
-    background-image : url(https://flagcdn.com/w80/nl.png);
+    background-image : url("https://flagcdn.com/w80/nl.png");
 }
 
 /*    Homepagine images aanpassen    */
