@@ -21,6 +21,10 @@ nav a{
     width: 9%;
 }
 
+nav a:hover{
+    bacground-image : url("https://flagcdn.com/w80/nl.png");
+}
+
 #focus{
     background-image : url("https://flagcdn.com/w80/nl.png");
 }
