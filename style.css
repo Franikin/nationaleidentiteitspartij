@@ -72,7 +72,7 @@ nav a:hover{
 
 /*    voor de pagina "standpunten" */
 .standpunten{
-    background-image: linear-gradient(white, light-blue);
+    background-image: linear-gradient(white, rgb(173, 216, 230));
     width: 40%;
     height: 200px;
     float: left;
