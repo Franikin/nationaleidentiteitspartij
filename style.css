@@ -1,5 +1,5 @@
 *{
-    font-family: century, serif;
+    font-family: century, "times new roman",  serif;
 }
 
 
@@ -43,20 +43,22 @@ nav a:hover{
 
 
 /*    voor de tekst op de homepagina    */
-#onsland{
-    float:left;
-    width: 30%;
-    color: rgb(30,30,200);
+#homeblock{
     margin-bottom: 100px;
-    font-weight:bolder;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #DDD;
+    background-color: #ff9560;
 }
-
-#rightheader{
-    float: left;
-    padding: 20px;
-    width: 50%;
-    margin-left: 50px;
-    margin-bottom: 100px;
+#homeblock h1{
+    color: red;
+}
+#homeblock h2{
+    color: white;
+}
+#homeblock p{
+    color: blue;
 }
 
 #Hstand{
@@ -71,42 +73,22 @@ nav a:hover{
 
 
 /*    voor de pagina "standpunten" */
+.standpunt{
+    width: 50%;
+    float: left;
+    height: 900px;
+}
+
 .standpunten{
     background-image: linear-gradient(white, rgb(173, 216, 230));
-    width: 40%;
-    height: 200px;
-    float: left;
     padding: 15px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    border-radius: 1.5%;
+    height: 220px;
 }
 
 .rechts{
     margin-left:10px;
 }
 
-.imgstandpunt{
-    float: left;
-    width: 40%;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-}
-
-.imgstandpunt img{
-    border-radius: 3%;
-}
-
-.imgstandpunt p{
-    background-color: white;
-    font-style: italic;
-    width: 100%;
-}
-
-.secondrow{
-    float:none;
-}
 
 
 /*    voor alle aticles (stukjes tekst) op de website    */
@@ -114,6 +96,46 @@ nav a:hover{
     width: 60%;
 }
 
+
+
+/*  voor het partij.html bestand    */
+#onze_visie {
+    margin-left: 10px;
+}
+
+/* Chatgpt gekookt */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Laat de items naar een nieuwe regel gaan bij kleinere schermen */
+    justify-content: space-between; /* Verdeel de ruimte mooi tussen de secties */
+    align-items: flex-start; /* Zorgt ervoor dat alles bovenaan uitlijnt */
+}
+
+.text-sectie {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%; /* 70% voor de tekst */
+    justify-content: space-between;
+}
+
+.partijprogramma {
+    flex: 1 1 calc(30% - 20px); /* Laat de tekstblokken netjes naast elkaar staan */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.secondrow-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.partijprogramma_secondrow {
+    flex: 1 1 calc(45% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 
 /*    voor de doneer pagina    */
@@ -135,6 +157,28 @@ nav a:hover{
     
 }
 
+/*  Voor de Petities pagina */
+#petitie1{
+    float: left;
+    padding: 20px;
+    width: 30%;
+    background-color: #ec9898;
+    
+}
+#petitie1 p, #petitie1 h1, #petitie1 li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#petitie2{
+    padding: 10px;
+    margin-left: 100px;
+    float: left;
+    width: 50%;
+    background-color: burlywood;
+}
+#petitie2 p, #petitie2 h2, #petitie2 li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 
 #wrapper{
@@ -142,15 +186,17 @@ nav a:hover{
     margin: auto;
 }
 
-h3{
-    font-weight: normal;
-}
-
-h2{
+.i{
+    background-color: white;
+    font-style: italic;
+    width: 100%;
     text-align: center;
 }
 
-.logo{
-    margin-top: 10px;
-    height: 50px;
+h4{
+    font-size: 14pt;
+}
+
+.center{
+    text-align: center;
 }
