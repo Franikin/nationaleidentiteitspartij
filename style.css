@@ -4,7 +4,7 @@
 
 
 
-/*    nav voor de grootte van mijn laptopscherm   */
+/*    nav voor de grootte van mijn laptopscherm   *//*
 nav{
     margin-top: 30px;
     margin-bottom: 40px;
@@ -19,6 +19,37 @@ nav a{
     color: black;
     text-decoration: none;
     width: 9%;
+} */
+
+nav {
+    display: flex;
+    justify-content: center; /* Houdt het menu in het midden */
+    flex-wrap: wrap; /* Zorgt dat het op een nieuwe regel springt als nodig */
+    white-space: nowrap; /* Voorkomt afbreken van woorden */
+    gap: 15px; /* Geeft ruimte tussen de knoppen */
+    padding: 10px;
+    max-width: 100%; /* Zorgt dat het niet buiten het scherm valt */
+    overflow: hidden; /* Voorkomt rare scrollbars */
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    flex: 1 1 auto; /* Zorgt dat de items altijd evenredig schalen */
+    text-align: center;
+}
+
+/* Voor kleine schermen */
+@media (max-width: 800px) {
+    nav {
+        flex-wrap: wrap; /* Laat de items naar een nieuwe regel springen als het te breed wordt */
+    }
+
+    nav a {
+        flex-basis: calc(33.33% - 10px); /* Verdeel in kolommen van drie */
+        min-width: 100px; /* Zorgt dat ze niet te smal worden */
+    }
 }
 
 nav a:hover{
@@ -49,7 +80,7 @@ nav a:hover{
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #DDD;
-    background-color: #ff9560;
+    background-color: #ffB580;
 }
 #homeblock h1{
     color: red;
@@ -61,24 +92,34 @@ nav a:hover{
     color: blue;
 }
 
+
+/*    voor de pagina "standpunten" */
 #Hstand{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    float:left;
     width: 100%;
 }
 
 
 
 
-/*    voor de pagina "standpunten" */
 
-
-.standpunt{
-    width: 50%;
-    float: left;
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: auto;
+    align-items: start; /* Zorgt ervoor dat alle items bovenaan beginnen */
 }
+
+.standpunt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Zorgt ervoor dat inhoud evenredig wordt verdeeld */
+    height: 100%; /* Zorgt dat alle items even hoog worden */
+}
+
 
 .standpunten{
     background-image: linear-gradient(white, rgb(173, 216, 230));
@@ -89,7 +130,9 @@ nav a:hover{
 
 /*    voor alle aticles (stukjes tekst) op de website    */
 .article{
-    width: 60%;
+    width: 30%;
+    float: left;
+    text-align: center;
 }
 
 
