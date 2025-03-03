@@ -73,20 +73,16 @@ nav a:hover{
 
 
 /*    voor de pagina "standpunten" */
+
+
 .standpunt{
     width: 50%;
     float: left;
-    height: 900px;
 }
 
 .standpunten{
     background-image: linear-gradient(white, rgb(173, 216, 230));
     padding: 15px;
-    height: 220px;
-}
-
-.rechts{
-    margin-left:10px;
 }
 
 
@@ -179,6 +175,10 @@ nav a:hover{
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*  Nieuws  */
+#nieuws1{
+    text-align: center;
+}
 
 
 #wrapper{
