@@ -23,33 +23,23 @@ nav a{
 
 nav {
     display: flex;
-    justify-content: center; /* Houdt het menu in het midden */
-    flex-wrap: wrap; /* Zorgt dat het op een nieuwe regel springt als nodig */
-    white-space: nowrap; /* Voorkomt afbreken van woorden */
-    gap: 15px; /* Geeft ruimte tussen de knoppen */
-    padding: 10px;
-    max-width: 100%; /* Zorgt dat het niet buiten het scherm valt */
-    overflow: hidden; /* Voorkomt rare scrollbars */
+    flex-wrap: nowrap; /* Voorkomt dat items naar een nieuwe regel springen */
+    justify-content: center; /* Houdt de items netjes gecentreerd */
+    gap: 10px; /* Voegt ruimte tussen de links toe */
+    overflow-x: auto; /* Scrollbaar als het te breed wordt */
+    white-space: nowrap; /* Zorgt dat tekst niet afbreekt */
+    padding: 15px;
+    background-color: white;
 }
 
 nav a {
+    color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    flex: 1 1 auto; /* Zorgt dat de items altijd evenredig schalen */
+    flex-shrink: 0; /* Voorkomt dat links kleiner worden */
     text-align: center;
-}
-
-/* Voor kleine schermen */
-@media (max-width: 800px) {
-    nav {
-        flex-wrap: wrap; /* Laat de items naar een nieuwe regel springen als het te breed wordt */
-    }
-
-    nav a {
-        flex-basis: calc(33.33% - 10px); /* Verdeel in kolommen van drie */
-        min-width: 100px; /* Zorgt dat ze niet te smal worden */
-    }
+    background-color: lightgray; /* Ter debug, kan je weghalen */
 }
 
 nav a:hover{
