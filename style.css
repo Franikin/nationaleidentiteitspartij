@@ -43,13 +43,13 @@ nav a:hover{
 
 /*    Homepagine images aanpassen    */
 .image{
-    width: 95%;
+    width: 47%;
     float: left;
     transition: width 0.4s;
 }
 
 .image:hover{
-    width: 97%;
+    width: 50%;
 
 }
 
