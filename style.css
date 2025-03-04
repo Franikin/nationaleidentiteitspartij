@@ -25,7 +25,6 @@ nav {
     display: flex;
     flex-wrap: nowrap; /* Voorkomt dat items naar een nieuwe regel springen */
     justify-content: center; /* Houdt de items netjes gecentreerd */
-    gap: 10px; /* Voegt ruimte tussen de links toe */
     overflow-x: auto; /* Scrollbaar als het te breed wordt */
     white-space: nowrap; /* Zorgt dat tekst niet afbreekt */
     padding: 15px;
@@ -39,7 +38,8 @@ nav a {
     padding: 10px 15px;
     flex-shrink: 0; /* Voorkomt dat links kleiner worden */
     text-align: center;
-    background-color: lightgray; /* Ter debug, kan je weghalen */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 nav a:hover{
