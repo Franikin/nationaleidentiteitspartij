@@ -84,6 +84,12 @@ nav a:hover{
 }
 
 
+#float{
+    width: 30%;
+    float: left;
+}
+
+
 /*    voor de pagina "standpunten" */
 #Hstand{
     text-align: center;
