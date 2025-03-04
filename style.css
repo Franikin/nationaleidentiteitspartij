@@ -35,7 +35,7 @@ nav a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    padding: 20px;
+    padding: 17px;
     gap: 5px;
     flex-shrink: 0; /* Voorkomt dat links kleiner worden */
     text-align: center;
