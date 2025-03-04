@@ -27,7 +27,7 @@ nav {
     justify-content: center; /* Houdt de items netjes gecentreerd */
     overflow-x: auto; /* Scrollbaar als het te breed wordt */
     white-space: nowrap; /* Zorgt dat tekst niet afbreekt */
-    padding: 15px;
+    padding: 18px;
     background-color: white;
 }
 
@@ -36,6 +36,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
+    gap: 5px;
     flex-shrink: 0; /* Voorkomt dat links kleiner worden */
     text-align: center;
     border-top: 1px solid black;
