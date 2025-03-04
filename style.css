@@ -2,6 +2,12 @@
     font-family: century, "times new roman",  serif;
 }
 
+#center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 #textwinkel{
     width: 60%;
     margin-bottom: 100px;
